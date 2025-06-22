@@ -6,12 +6,17 @@
 @theme {
   --font-poppins: Poppins, sans-serif;
   --color-tech_bg_color: #f2f4f8;
+  --color-home_page: #ffface;
   --color-tech_orange: #ef4a23;
   --color-tech_white: #ffffff;
   --color-tech_black: #000000;
   --color-tech_dark: #081621;
   --color-tech_light_yellow: #fde8a1;
+  --color-tech_light_orange: #f9b6a0;
   --color-tech_blue: #3749bb;
+  --color-tech_light_blue: #6d7bd4;
+  --color-tech_light_blue_2: #b8c0f7;
+
   --color-tech_purple: #6e2594;
   --color-tech_light_green: #3b9c3c;
   --color-tech_dark_green: #1a5d1a;
@@ -139,5 +144,8 @@
   }
   .hoverEffect{
     @apply transition-all duration-300 ease-in-out;
+  }
+  button{
+    @apply hover:cursor-pointer;
   }
 }

@@ -2,16 +2,39 @@ import React from 'react'
 import Container from './Container'
 import Logo from './Logo'
 import HeaderMenu from './HeaderMenu'
+import SearchBar from './SearchBar'
+import CartIcon from './CartIcon'
+import FavouriteButton from './FavouriteButton'
+import SignIn from './SignIn'
+import MobileMenu from './MobileMenu'
+import { currentUser } from '@clerk/nextjs/server'
+import { ClerkLoaded, SignedIn, UserButton } from '@clerk/nextjs'
 
-function Header() {
+const Header = async() => {
+  const user = await currentUser();
   return (
-    <header className='bg-white py-5 border-b border-b-black/50'>
-      <Container className='flex items-center justify-between py-4'>
+    <header className='bg-white py-5'>
+      <Container className='flex items-center justify-between py-4'>  
         {/*Logo*/}
-        <Logo />
+        <div className='w-auto md:w-1/3 flex items-center gap-2.5 justify-start md:gap-0'>
+
+          <MobileMenu />
+          <Logo />
+        </div>
         {/*Nav Button*/}
         <HeaderMenu />
-        <div>Others</div>
+        <div className='w-auto md:w-1/3 flex items-center justify-end gap-5'>
+          <SearchBar />
+          <CartIcon />
+          <FavouriteButton />
+          <ClerkLoaded>
+              <SignedIn>
+              <UserButton />
+              </SignedIn>
+              {!user && <SignIn />
+              }
+          </ClerkLoaded>
+        </div>
 
         {/*Nav Admin*/}
 
