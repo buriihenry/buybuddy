@@ -35,6 +35,7 @@ export const categoryType = defineType({
       type: "boolean",
       initialValue: false,
     }),
+    
     defineField({
       name: "image",
       title: "Category Image",
