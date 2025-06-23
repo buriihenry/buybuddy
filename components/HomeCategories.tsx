@@ -17,7 +17,7 @@ const HomeCategories = ({ categories }: { categories: CategoryWithCount[] })  =>
         {categories?.map((category) => (
           <div
             key={category?._id}
-            className="bg-tech_light_blue_2 p-5 flex items-center gap-3 group"
+            className="p-5 flex items-center gap-3 group"
           >
             {category?.image && (
               <div className="overflow-hidden border border-tech_light_yellow/30 hover:border-tech_orange hoverEffect w-20 h-20 p-1">

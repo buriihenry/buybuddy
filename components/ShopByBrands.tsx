@@ -9,12 +9,12 @@ import { GitCompareArrows, Headset, ShieldCheck, Truck } from "lucide-react";
 const extraData = [
   {
     title: "Free Delivery",
-    description: "Free shipping over $100",
+    description: "Free shipping over KES 2,000",
     icon: <Truck size={45} />,
   },
   {
     title: "Free Return",
-    description: "Free shipping over $100",
+    description: "Free shipping over KES 2,000",
     icon: <GitCompareArrows size={45} />,
   },
   {
@@ -32,7 +32,7 @@ const extraData = [
 const ShopByBrands = async () => {
   const brands = await getAllBrands();
   return (
-    <div className="mb-10 lg:mb-20 bg-tech_light_blue p-5 lg:p-7 rounded-md">
+    <div className="mb-10 lg:mb-20 bg-gray-100 p-5 lg:p-7 rounded-md">
       <div className="flex items-center gap-5 justify-between mb-10">
         <Title>Shop By Brands</Title>
         <Link
@@ -61,11 +61,11 @@ const ShopByBrands = async () => {
           </Link>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16 p-2 shadow-sm hover:shadow-tech_light_blue/20 py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16 p-2 shadow-sm hover:shadow-tech_light_blue_2 py-5">
         {extraData?.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-3 group text-lightColor hover:text-tech_light_blue hoverEffect"
+            className="flex items-center gap-3 group text-lightColor hover:text-tech_blue hoverEffect"
           >
             <span className="inline-flex scale-100 group-hover:scale-90 hoverEffect">
               {item?.icon}
