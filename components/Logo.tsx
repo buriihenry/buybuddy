@@ -8,8 +8,8 @@ const Logo = ({className, spanDesign}: {
 }) => {
   return (
     <Link href={"/"} className='inline-flex'>
-        <h2 className={cn("text-2xl text-tech_dark_green font-black tracking-wide uppercase hover:text-tech_light_green hoverEffect group font-sans",className)}>
-            Buybudd<span className={cn('text-tech_light_green group-hover:text-tech_dark_green hoverEffect', spanDesign)}>y</span>
+        <h2 className={cn("text-2xl text-tech_blue font-black tracking-wide uppercase hover:text-tech_light_blue_2 hoverEffect group font-sans",className)}>
+            Buybudd<span className={cn('text-tech_light_blue group-hover:text-tech_blue hoverEffect', spanDesign)}>y</span>
         </h2>
     </Link>
   )
