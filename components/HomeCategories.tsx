@@ -35,7 +35,7 @@ const HomeCategories = ({ categories }: { categories: CategoryWithCount[] })  =>
             <div className="space-y-1">
               <h3 className="text-base font-semibold">{category?.title}</h3>
               <p className="text-sm">
-                <span className="font-bold text-tech_blue">{`(${category?.productCount || 0})`}</span>{" "}
+                <span className="font-bold text-tech_blue">{`(${category?.productCount})`}</span>{" "}
                 items Available
               </p>
             </div>
