@@ -17,9 +17,6 @@ const Home = async () => {
       <HomeCategories categories={categories}  />
       <ShopByBrands />
       <LatestBlog />
-
-      
-     
     </Container>
   )
 }
