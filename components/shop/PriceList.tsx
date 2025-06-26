@@ -4,11 +4,11 @@ import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import { Label } from "../ui/label";
 
 const priceArray = [
-  { title: "Under KES 100", value: "0-100" },
-  { title: "KES 100 - KES 200", value: "100-200" },
-  { title: "KES 200 - KES 300", value: "200-300" },
-  { title: "KES 300 - KES 500", value: "300-500" },
-  { title: "Over KES 500", value: "500-10000" },
+  { title: "Under KES 10000", value: "0-10000" },
+  { title: "KES 10000 - KES 20000", value: "10000-20000" },
+  { title: "KES 20000 - KES 30000", value: "20000-30000" },
+  { title: "KES 30000 - KES 50000", value: "30000-50000" },
+  { title: "Over KES 50000", value: "50000-100000" },
 ];
 
 interface Props {
