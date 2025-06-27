@@ -18,10 +18,10 @@ const ProductGrid = () => {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    const query = `*[_type == "product" && variant == $variant] | order(name asc){
-      ...,"categories": categories[]->title
-    }`;
-    const params = { variant: selectedTab.toLowerCase() };
+  const query = `*[_type == "product" && variant == $variant] | order(name asc){
+  ...,"categories": categories[]->title
+}`;
+  const params = { variant: selectedTab.toLowerCase() };
     const fetchData = async () => {
       setLoading(true);
       try {
