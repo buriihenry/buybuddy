@@ -31,6 +31,7 @@ const Shop = ({ categories, brands }: Props) => {
   const [selectedPrice, setSelectedPrice] = useState<string | null>(null);
   const useEffect = React.useEffect;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const fetchProducts = async () => {
       setLoading(true);

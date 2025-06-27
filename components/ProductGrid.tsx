@@ -16,6 +16,7 @@ const ProductGrid = () => {
   const [loading, setLoading] = useState(false);
   const [selectedTab, setSelectedTab] = useState(productType[0]?.title || "");
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const query = `*[_type == "product" && variant == $variant] | order(name asc){
       ...,"categories": categories[]->title

@@ -12,6 +12,7 @@ import { FiShare2 } from "react-icons/fi";
 import { RxBorderSplit } from "react-icons/rx";
 import { TbTruckDelivery } from "react-icons/tb";
 import { notFound } from "next/navigation";
+import { Product } from "@/sanity.types";
 
 const SingleProductPage = async ({
   params,
@@ -62,8 +63,8 @@ const SingleProductPage = async ({
           </p>
         </div>
         <div className="flex items-center gap-2.5 lg:gap-3">
-          <AddToCartButton product={product} />
-          <FavouriteButton showProduct={true} product={product} />
+          <AddToCartButton product={product as Product} />
+          <FavouriteButton showProduct={true} product={product as Product} />
         </div>
         <ProductCharacteristics product={product} />
         <div className="flex flex-wrap items-center justify-between gap-2.5 border-b border-b-gray-200 py-5 -mt-2">
