@@ -29,7 +29,7 @@ Transform Shopping Into Seamless, Personalized Experiences
 - Stripe integration for secure payments
 - User authentication (Clerk)
 - Responsive design with styled-components and Tailwind CSS
-- Blog, product grid, categories, brands, and more
+- Product grid, categories, brands, and more
 
 ---
 
