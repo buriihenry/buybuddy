@@ -7,8 +7,9 @@ import { useEffect } from "react";
 import { motion } from "motion/react";
 import { Check, Home, Package, ShoppingBag } from "lucide-react";
 import Link from "next/link";
+import { Suspense } from "react";
 
-const SuccessPage = () => {
+const SuccessPageContent = () => {
   //const { user } = useUser();
   const { resetCart } = useStore();
   const searchParams = useSearchParams();
@@ -78,5 +79,11 @@ const SuccessPage = () => {
     </div>
   );
 };
+
+const SuccessPage = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <SuccessPageContent />
+  </Suspense>
+);
 
 export default SuccessPage;
