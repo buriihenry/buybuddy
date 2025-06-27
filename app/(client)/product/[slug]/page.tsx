@@ -23,6 +23,7 @@ const SingleProductPage = async ({
 
   if (!product) {
     notFound();
+    return null;
   }
 
   return (
